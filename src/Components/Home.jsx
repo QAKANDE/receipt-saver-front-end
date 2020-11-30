@@ -5,6 +5,7 @@ import "../css/Home.css"
 class Home extends Component {
     state = { 
         receiptDetails: [],
+        id:"",
         postReceiptDetails: {
             quantity: "",
             price: "",
@@ -55,6 +56,19 @@ class Home extends Component {
              alert("Something Went Wrong , Please check receipt details again")
          }
     }
+
+    deleteReceipt =   async (id) => {
+        const res = await fetch(`http://localhost:3003/receipt/delete/${id}`, {
+             method: "DELETE", 
+         headers: {
+            "Content-Type": "Application/json",
+            },
+        })
+        if (res.ok) {
+            alert("Deleted")
+            window.location.reload()
+        }
+    }
     render() { 
         return (
             <div id="wrapper">
@@ -82,7 +96,8 @@ class Home extends Component {
                             <h4>£ {d.price}</h4>
                           </div>
                         </div>
-    </Card.Text>
+                                            </Card.Text>
+                <button id="deleteButton" onClick = {(id)=> this.deleteReceipt(d._id)}>Delete</button>
   </Card.Body>
 </Card>
                                 )
