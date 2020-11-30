@@ -45,43 +45,6 @@ class Login extends Component {
             }
         }
  }
-    
-    // loginHandler = async (e) => {
-    //     e.preventDefault()
-    //     if (this.state.loginDetails.firstName === "" && this.state.loginDetails.password === "" && this.state.loginDetails.secretKey) {
-    //         alert("Please Enter Login Details")
-    //         console.log(this.state.loginDetails.firstName)
-    //     }
-    //     else {
-    //         const response = await fetch("http://localhost:3003/users/login", {
-    //             method: "POST",
-    //         body: JSON.stringify({
-    //           firstName: this.state.loginDetails.firstName, 
-    //             password: this.state.loginDetails.password,
-    //           secretKey:this.state.loginDetails.secretKey
-    //         }) , 
-    //          headers: {
-    //             "Content-Type": "Application/json",
-    //           },
-    //         })
-    //         console.log("second", this.state.loginDetails.firstName)
-    //         console.log(await response.json())
-    //     }
-    // //     if (response.ok) {
-    // //         this.setState({
-    // //                loginDetails: {
-    // //   firstName: "",
-    // //         password: "",
-    // //   token:""
-    // // }
-    // //         })
-    // //         window.location.href = "http://localhost:3000/app"
-    // //     }
-    // //     else
-    // //     {
-    // //         alert("Something went wrong")
-    // //     }
-    // }
     render() { 
         return (
             <Container id="login-wrapper">
