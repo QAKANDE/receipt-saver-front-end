@@ -28,7 +28,7 @@ class Login extends Component {
         }
         else {
             try { 
-                const response = await axios.post("http://localhost:3003/users/login", {
+                const response = await axios.post("https://kudzayi-fam-back.herokuapp.com/users/login", {
                     email: this.state.loginDetails.email,
                     secretKey : this.state.loginDetails.secretKey
                 })
@@ -38,7 +38,7 @@ class Login extends Component {
                 }
                 else {
                     alert("Log In Successful")
-                     window.location.href = "http://localhost:3000/app"
+                     window.location.href = "https://kudzayi-fam.herokuapp.com/app"
                 }
             } catch (error) {
                console.log(error)

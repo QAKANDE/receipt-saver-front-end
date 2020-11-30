@@ -13,7 +13,7 @@ class Home extends Component {
     }
     
     componentDidMount = async () => {
-        const response = await fetch("http://localhost:3003/receipt", {
+        const response = await fetch("https://kudzayi-fam-back.herokuapp.com/receipt", {
              method: "GET", 
          headers: {
             "Content-Type": "Application/json",
@@ -36,7 +36,7 @@ class Home extends Component {
     }
 
      postReceipt = async () => {
-         const res = await fetch("http://localhost:3003/receipt/sendreceipt", {
+         const res = await fetch("https://kudzayi-fam-back.herokuapp.com/receipt/sendreceipt", {
              method: "POST",
         body: JSON.stringify({
           quantity: this.state.postReceiptDetails.quantity, 
