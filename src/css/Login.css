@@ -1,0 +1,23 @@
+#login-wrapper {
+  margin-top: 10%;
+}
+
+#login-form {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+#login {
+  background-color: hsl(40 91% 91% / 1);
+  box-shadow: 0 3px 6px -2px rgb(0, 0, 0, 0.3);
+  border: 0;
+  color: #692569;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  width: 350px;
+  margin-left: 35%;
+  margin-top: 2rem;
+}

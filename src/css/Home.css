@@ -1,0 +1,28 @@
+/* #wrapper{
+
+    background-color: purple;
+} */
+#all-wrapper {
+  margin-top: 5rem;
+}
+
+.other-wrapper {
+  margin-top: 3rem;
+}
+
+.card-title {
+  font-weight: 10rem;
+  font-size: 16rem;
+}
+#post-receipt {
+  background-color: hsl(40 91% 91% / 1);
+  box-shadow: 0 3px 6px -2px rgb(0, 0, 0, 0.3);
+  border: 0;
+  color: #692569;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  width: 350px;
+}
