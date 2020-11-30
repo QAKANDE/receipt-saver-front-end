@@ -58,7 +58,7 @@ class Home extends Component {
     }
 
     deleteReceipt =   async (id) => {
-        const res = await fetch(`http://localhost:3003/receipt/delete/${id}`, {
+        const res = await fetch(`https://kudzayi-fam-back.herokuapp.com/receipt/delete/${id}`, {
              method: "DELETE", 
          headers: {
             "Content-Type": "Application/json",
