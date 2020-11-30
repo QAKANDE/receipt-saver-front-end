@@ -60,7 +60,7 @@ class Home extends Component {
             <div id="wrapper">
             <Container id="all-wrapper">
                 <div>
-                    <h3 className="text-center">Welcome to the Family Record Book , lol</h3>
+                    <h3 className="text-center">Welcome to the Family Record Book </h3>
                 </div>
                 <Row>
                     <Col xl={8}>
